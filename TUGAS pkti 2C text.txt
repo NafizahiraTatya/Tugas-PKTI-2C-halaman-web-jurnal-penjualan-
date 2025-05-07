@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jurnal Penjualan</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 30px;
+      background-color: #f9f9f9;
+    }
+
+    .header {
+      margin-bottom: 20px;
+    }
+
+    .header p {
+      margin: 0;
+      font-size: 14px;
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      background-color: #fff;
+      box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    }
+
+    th, td {
+      border: 1px solid #ccc;
+      padding: 8px 10px;
+      text-align: left;
+    }
+
+    th {
+      background-color: #e8f4fb;
+    }
+
+    tfoot td {
+      font-weight: bold;
+      background-color: #e8f4fb;
+    }
+
+    .right {
+      text-align: right;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="header">
+    <p><strong>Nama</strong> : Ahmad Apandi</p>
+    <p><strong>NPM</strong> : 12345678</p>
+    <p><strong>Kelas</strong> : 1EB00</p>
+  </div>
+
+  <h2>Jurnal Penjualan</h2>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Tanggal</th>
+        <th>No. Faktur</th>
+        <th>Nama Pelanggan</th>
+        <th>Keterangan</th>
+        <th>Ref</th>
+        <th>Debit (Piutang)</th>
+        <th>Kredit (Penjualan)</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>2025-05-06</td>
+        <td>INV-20250506-001</td>
+        <td>Toko Maju Jaya</td>
+        <td>Penjualan tunai</td>
+        <td>KKM-01</td>
+        <td></td>
+        <td class="right">Rp 1.500.000</td>
+      </tr>
+      <tr>
+        <td>2025-05-06</td>
+        <td>INV-20250506-002</td>
+        <td>PT. Sumber Rezeki</td>
+        <td>Penjualan kredit</td>
+        <td></td>
+        <td class="right">Rp 2.800.000</td>
+        <td class="right">Rp 2.800.000</td>
+      </tr>
+      <tr>
+        <td>2025-05-07</td>
+        <td>INV-20250507-003</td>
+        <td>Ibu Ani</td>
+        <td>Penjualan tunai</td>
+        <td>KKM-02</td>
+        <td></td>
+        <td class="right">Rp 750.000</td>
+      </tr>
+    </tbody>
+    <tfoot>
+      <tr>
+        <td colspan="5" class="right">Total:</td>
+        <td class="right">Rp 2.800.000</td>
+        <td class="right">Rp 5.050.000</td>
+      </tr>
+    </tfoot>
+  </table>
+
+</body>
+</html>
